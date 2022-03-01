@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -35,4 +40,92 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.container {
+  background-color: rgb(100, 100, 100);
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+
+
+  /* height: 100vh; */
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  width: 350px;
+
+
+
+  /* flex-direction: row; */
+  /* box-shadow: 2px 2px 5px rgba(0,0,0,0.4); */
+  
+}
+
+.drum-pad {
+  border: 2px solid #333;
+  background-color: rgb(14, 121, 37);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  width: 100px;
+  height: 100px;
+  margin: 5px 5px 5px 5px;
+  font-size: 60px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.drum-pad-active {
+  opacity: 0.8;
+  transform: scale(0.98);
+  background-color: #00b82e;
+}
+
+.clip-name {
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+
+.recording-buttons {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+}
+
+.play-button {
+  margin-left: 15px;
+  width: 100px;
+  height: 50px;
+  border: 2px solid #333;
+  background-color: rgb(103, 105, 204);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.clear-button {
+  width: 100px;
+  height: 50px;
+  border: 2px solid #333;
+  background-color: rgb(197, 165, 59);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.recorded-keys {
+  width: 450px;
 }
